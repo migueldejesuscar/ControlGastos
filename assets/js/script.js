@@ -72,7 +72,9 @@ function actualizarListaGastos(){
         const valorGasto = Number(listaValoresGastos[posicion]);
         const  detalleGasto = listaDescripcionGastos[posicion];
         // creamos los elementos en HTML (boton eliminar) desde JavaScript
-        htmlLista += `<li>${elemento} - ${detalleGasto} - USD ${valorGasto.toFixed(2)}
+        htmlLista += `<li> <p> ${elemento} - USD ${valorGasto.toFixed(2)}  
+                      <br><span class="descripcion"> Descripción: ${detalleGasto} </span>
+                      </p>                     
                       <button onclick="eliminarGasto(${posicion});">Eliminar</button> 
                       <button onclick="actualizarGasto(${posicion});">Actualizar</button>                    
                       </li>`        
@@ -90,7 +92,7 @@ function actualizarListaGastos(){
 
 function limpiarTextbox(){
     // Seleccionamos todos los inputs de tipo 'text' y 'number'
-    let camposTextoNumero = document.querySelectorAll('input[type="text"], input[type="number"]');
+    let camposTextoNumero = document.querySelectorAll('input[type="text"], input[type="number"], textarea[type="text"]');
 
     // Recorremos todos los campos y limpiamos su valor
     camposTextoNumero.forEach(function(campo) {
