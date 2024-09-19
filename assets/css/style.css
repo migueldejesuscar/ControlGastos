@@ -23,6 +23,15 @@ input[type="number"] {
     border-radius: 4px;
 }
 
+.textarea{
+    font-size: 1rem;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
 button {
     padding: 10px 40px;
     width: fit-content;
@@ -33,6 +42,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+    height: fit-content;
 }
 
 button:hover {
@@ -54,6 +64,7 @@ ul li {
     border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 ul li:last-child {
@@ -112,4 +123,9 @@ ul li:last-child {
     text-align: center;
     color: #fff;
 
+}
+
+.descripcion{
+    font-size: 12px;
+    padding-left: 5px;
 }
